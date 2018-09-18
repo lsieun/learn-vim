@@ -1,5 +1,21 @@
 # Java
 
+- code completion
+- debuging tools
+- compile and build of the project
+- resource management
+- project tree
+
+https://github.com/vrapper/vrapper
+
+https://medium.com/@Sohjiro/setup-vim-checkstyle-java-d0dd74dca1e1
+
+The way that I replaced that tool, was with Vim. But, not Vim alone. Programming with only pure and plain Vim should be considered as a suicidal act. Why do I say that? Because, Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. By default, Vim has support for autocompletion (not the one that I mentioned before), supports syntax highlighting, supports hundreds of programming languages and file formats, among other things. That’s why I’m using Vim with a couple of plugins to make my life easier.
+
+https://blog.lazyhacker.com/2012/02/vundle-to-manage-my-vim-plugins.html
+
+That lead me to Eclim which is an Eclipse and VIM plugin combo that allowed VIM to access Eclipse's functionality.  This is pretty cool as it allowed me to do most of my work in VIM and switch to Eclipse when I needed to.  While this solution works, I started getting the itch to see how VIM can handle some of the tasks I was depending on Eclipse for so I started looking at various VIM plugins which led me to research how to manage plug-ins in general.
+
 URL: https://stackoverflow.com/questions/253170/tips-for-using-vim-as-a-java-ide
 
 http://shawnleezx.github.io/blog/2013/10/03/note-code-java-under-vim/

@@ -73,8 +73,10 @@ Some Examples
 :ProjectCreate ~/projects/a_project -n java php -p My\ Project\ Name
 ```
 
+## `:ProjectRefresh [<project> <project> …]`
 
+Refreshes the supplied list of named projects by synchronizing each project against the current files on disk. **If no projects names are supplied, refresh the current project**. 
 
-
+Useful **when files may have been added, removed, or updated** by a secondary application, like a version control system (cvs, subversion, etc).
 
 
