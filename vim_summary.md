@@ -67,4 +67,9 @@ runtimepath --- plugins (windows  / functionality)   --- plugin manager(Vundle)
 vim 
 
 
-
+Fuzzy File Search: CtrlP
+Tag jumping
+Autocomplete: YouCompleteMe
+File Browsing: NERTTree
+Snippets:
+Build Integration
