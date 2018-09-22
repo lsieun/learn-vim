@@ -1,4 +1,6 @@
+不完善的地方：
 
+- ex Editor
 
 Installation
 
