@@ -1,9 +1,20 @@
 # Plugins
 
+URL:
+
+- https://realpython.com/vim-and-python-a-match-made-in-heaven
+
+## Plugin Manager
+
+- pathogen
+- https://github.com/gmarik/vundle
+- https://github.com/junegunn/vim-plug
+
 - powerline
 - YouCompleteMe
 - NERDTree
 
+## Plugins
 
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-fugitive'
