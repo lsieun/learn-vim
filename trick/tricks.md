@@ -9,18 +9,7 @@
 `:set rnu` to turn on relative numbers and `:set nornu` to turn off the same.
 
 
-## Write a file if you forget to sudo before starting vim
-This command will save the open file with `sudo` rights
 
-```
-:w !sudo tee % >/dev/null
-```
-
-You can also map `w!!` to write out a file as root
-
-```
-:cnoremap w!! w !sudo tee % >/dev/null
-```
 
 ## Know the path of the file you are editing
 
@@ -34,12 +23,7 @@ You can also map `w!!` to write out a file as root
 $ vim 'https://codingdash.com/'
 ```
 
-# 对行进行排序
 
-```
-#,#!sort
-10,15!sort  #对10到15行按照字母排序
-```
 
 ## 缩进 ##
 ```
