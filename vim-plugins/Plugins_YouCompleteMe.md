@@ -24,7 +24,7 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 使用`Ctrl+O`(后退)和`Ctrl+I`(前进)
 
 
-
+使用命令`:YcmDiags`可以打开location-list查看警告和错误信息。
 
 
 
