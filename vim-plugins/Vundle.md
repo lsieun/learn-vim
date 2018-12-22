@@ -2,7 +2,7 @@
 
 Github: https://github.com/VundleVim/Vundle.vim
 
-## What is Vundle?
+## What is Vundle
 
 **Vundle**, which stands for **Vim Bundle**, is **a Vim plugin manager**. 
 
@@ -16,7 +16,7 @@ Vundle allows you to **install**, **update**, **search** and **clean up** Vim pl
 
 安装Vundle需要两步：
 
-第一步：安装[Git](../CentOS7_Git.md)。
+第一步：安装[Git](https://github.com/lsieun/learn-linux/blob/master/software/git.md)。
 
 第二步：安装Vundle
 
@@ -36,7 +36,7 @@ Next, we'll have to recreate our `~/.vimrc` file to tell vim to use our new pack
 
 > 此处配置`~/.vimrc`的主要作用告诉vim要使用vundle了。
 
-```
+```bash
 vim ~/.vimrc
 ```
 
@@ -46,7 +46,7 @@ Inside, we need a few things to start us off. First, we need to make sure that `
 
 We also want to turn off the default "filetype" controls for now because the way that vim caches filetype rules at runtime interferes with the way that vundle alters the runtime environment. We will change this back later:
 
-```
+```bash
 set nocompatible
 filetype off
 ```
@@ -54,7 +54,8 @@ filetype off
 Next, we'll need to then adjust **vim's runtime path** to include **the `vundle` location** we cloned from GitHub. After that, we will call **the vundle initialization function**:
 
 `~/.vimrc`最简配置：
-```
+
+```bash
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -81,22 +82,26 @@ All plugins must be declared between the `call vundle#begin()` line and the `cal
 Now, our `vundle` system is initialized and we can add in the plugins that we wish to manage.
 
 To install from Github:
-```
+
+```vim
 Plugin 'user/plugin'
 ```
 
 To install from http://vim-scripts.org/vim/scripts.html:
-```
+
+```vim
 Plugin 'plugin_name'
 ```
 
 To install from another git repo:
-```
+
+```vim
 Plugin 'git://git.another_repo.com/plugin'
 ```
 
 To install from a local file:
-```
+
+```vim
 Plugin 'file:///home/user/path/to/plugin'
 ```
 
@@ -105,34 +110,44 @@ Plugin 'file:///home/user/path/to/plugin'
 ### Install and Update Plugins with Vundle
 
 Now, we just need to tell vundle to install all of the plugins that we added to the file. Start vim:
-```
+
+```bash
 vim
 ```
+
 Now, issue the `:PluginInstall` command:
-```
+
+```vim
 :PluginInstall
 ```
+
 This will open a new split window in vim and run through the installation of each of the new plugins. When it is complete, you can close the new buffer and window by typing:
-```
+
+```vim
 :bdelete
 ```
 
 The plugins that you added to your `~/.vimrc` file are now installed!
 
 If you wish to update your plugins, you can use one of these two commands:
-```
+
+```vim
 :PluginUpdate
 ```
+
 Or
-```
+
+```vim
 :PluginInstall!
 ```
+
 The "`!`" at the end of the `:PluginInstall!` command basically tells vundle to reinstall all of the plugins (it checks if any action is needed), which will get the newest versions.
 
 ### Acquiring New Plugins
 
 Searching and Installing Plugin using Vundle Plugin Manager:
-```
+
+```vim
 :PluginSearch colorscheme
 ```
 
@@ -144,7 +159,7 @@ You can list all the installed VIM plugins with the following VIM command:
 
 To see all of your installed plugins, type this:
 
-```
+```vim
 :PluginList
 ```
 
@@ -152,7 +167,8 @@ To see all of your installed plugins, type this:
 
 第2种删除插件的方式：
 An easier way of doing this though is to remove it from the `~/.vimrc` file first. After you've removed it, you can call this command:
-```
+
+```vim
 :PluginClean
 ```
 
@@ -190,10 +206,3 @@ This simplifies our management scheme greatly. This is basically what `pathogen`
 What `vundle` does is add **a management interface** inside of vim itself that let's you acquire more plugins, update plugins, etc. It adds the "management" portion on top of what some people would say is pathogen's organization improvements.
 
 > vundle在vim的内部增加了管理界面（management interface）。
-
-
-
-
-
-
-
