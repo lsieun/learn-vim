@@ -2,7 +2,21 @@
 
 Github: https://github.com/VundleVim/Vundle.vim
 
-## What is Vundle
+<!-- TOC depthFrom:2 -->
+
+- [Vundle](#vundle)
+  - [1. What is Vundle](#1-what-is-vundle)
+  - [2. Installing Vundle](#2-installing-vundle)
+  - [3. Configuring Vundle](#3-configuring-vundle)
+  - [4. Use Vundle](#4-use-vundle)
+    - [4.1. Install and Update Plugins with Vundle](#41-install-and-update-plugins-with-vundle)
+    - [4.2. Acquiring New Plugins](#42-acquiring-new-plugins)
+    - [4.3. Managing Installed Plugins](#43-managing-installed-plugins)
+  - [5. How does Vundle Work?](#5-how-does-vundle-work)
+
+<!-- /TOC -->
+
+## 1. What is Vundle
 
 **Vundle**, which stands for **Vim Bundle**, is **a Vim plugin manager**. 
 
@@ -10,9 +24,7 @@ Vundle allows you to **install**, **update**, **search** and **clean up** Vim pl
 
 > bundle表示“一批同类事物”
 
-
-
-## Installing Vundle
+## 2. Installing Vundle
 
 安装Vundle需要两步：
 
@@ -21,8 +33,9 @@ Vundle allows you to **install**, **update**, **search** and **clean up** Vim pl
 第二步：安装Vundle
 
 Next, create a directory where Vim plugins will be downloaded and installed. By default, this directory is located at `~/.vim/bundle`
-```
-$ mkdir -p ~/.vim/bundle
+
+```bash
+mkdir -p ~/.vim/bundle
 ```
 
 Now go ahead and install Vundle as follows. Note that Vundle itself is another Vim plugin. Thus we install Vundle under `~/.vim/bundle` we created earlier.
@@ -30,7 +43,7 @@ Now go ahead and install Vundle as follows. Note that Vundle itself is another V
 $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
-## Configuring Vundle
+## 3. Configuring Vundle
 
 Next, we'll have to recreate our `~/.vimrc` file to tell vim to use our new package management system.
 
@@ -70,7 +83,8 @@ filetype plugin indent on
 ```
 
 其中，
-- `rtp`是`runtime path`的缩写； 
+
+- `rtp`是`runtime path`的缩写；
 - `vundle#begin()`：After calling this function the user can use the `:Plugin` command in the vimrc.
 - `vundle#end()`: Finishes putting plugins on the rtp. 
 - `Plugin 'VundleVim/Vundle.vim'` 这里就使用了`:Plugin`命令This should always be the first.
@@ -105,9 +119,9 @@ To install from a local file:
 Plugin 'file:///home/user/path/to/plugin'
 ```
 
-## Use Vundle
+## 4. Use Vundle
 
-### Install and Update Plugins with Vundle
+### 4.1. Install and Update Plugins with Vundle
 
 Now, we just need to tell vundle to install all of the plugins that we added to the file. Start vim:
 
@@ -143,7 +157,7 @@ Or
 
 The "`!`" at the end of the `:PluginInstall!` command basically tells vundle to reinstall all of the plugins (it checks if any action is needed), which will get the newest versions.
 
-### Acquiring New Plugins
+### 4.2. Acquiring New Plugins
 
 Searching and Installing Plugin using Vundle Plugin Manager:
 
@@ -155,7 +169,7 @@ To install a plugin, just move the VIM cursor to the line and press `i`.
 
 You can list all the installed VIM plugins with the following VIM command:
 
-### Managing Installed Plugins
+### 4.3. Managing Installed Plugins
 
 To see all of your installed plugins, type this:
 
@@ -173,7 +187,7 @@ An easier way of doing this though is to remove it from the `~/.vimrc` file firs
 ```
 
 
-## How does Vundle Work?
+## 5. How does Vundle Work?
 
 Traditionally, `vim` is configured on **a per-user basis** in **each user's home directory**, with fall-back **defaults configured by the system administrator** and finally **the software itself**. These **personal settings** are stored in a hidden file called `~/.vimrc`.
 
