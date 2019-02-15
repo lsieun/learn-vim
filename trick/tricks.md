@@ -1,39 +1,35 @@
+# Tricks
 
 ## Turn On Relative Line Numbers
 
-```
+```vim
 :set relativenumber
-
 ```
 
 `:set rnu` to turn on relative numbers and `:set nornu` to turn off the same.
 
-
-
-
 ## Know the path of the file you are editing
 
-```
+```vim
 :pwd
 ```
 
 ## Open source of any URL
 
-```
-$ vim 'https://codingdash.com/'
+```bash
+vim 'https://codingdash.com/'
 ```
 
+## 缩进
 
-
-## 缩进 ##
-```
+```vim
 > （当前行）缩进
 >2j 将当前行及下面两行进行缩进
 ```
 
-## Change+查找 ##
+## Change+查找
 
-```
+```vim
 c/other    # 一直change到"other"单词
 ```
 
@@ -42,7 +38,6 @@ c/other    # 一直change到"other"单词
 ```
 fx     #在这一行中，快带找到下一个x
 ```
-
 
 ## 切换大小写
 
@@ -53,7 +48,7 @@ fx     #在这一行中，快带找到下一个x
 
 ## 显示相对行号
 
-```
+```vim
 :set relativenumber
 6dd 删除6行
 :set norelativenumber
