@@ -1,5 +1,7 @@
 # 如何在vim 中看到16进制的显示
 
+- Tags: hex
+
 view hex mode in vim
 
 ```vim
