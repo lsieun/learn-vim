@@ -42,7 +42,6 @@ Here is Line 5
 
 7. We are now at the beginning of Line `#3`!
 
-
 ## 2、Jumps, Marks and a Few Commands
 
 We know how to set a mark with `m`, but let’s clarify the **two types of mark jumps** and the different types of marks.
@@ -50,11 +49,12 @@ We know how to set a mark with `m`, but let’s clarify the **two types of mark 
 ### 2.1、Two Types of Mark Jumps
 
 #### BACKTICK
+
 `` `<mark>`` - **The backtick** places our cursor directly on the mark.
 
 #### SINGLE QUOTE
-`'<mark>` - **The single quote** takes us to **the first non-blank character** of the mark’s line.
 
+`'<mark>` - **The single quote** takes us to **the first non-blank character** of the mark’s line.
 
 ### 2.2、Three Types of Marks
 
@@ -83,7 +83,6 @@ We know how to set a mark with `m`, but let’s clarify the **two types of mark 
 `:delm[arks] {marks}` - We can use `:delm` or `:delmarks` and then pass in marks that we want to delete.
 
 - `:delm aAbB` - will delete marks labeled `a`, `A`, `b` and `B`.
-
 
 ## 3、Okay, What’s So Cool About Marks?
 

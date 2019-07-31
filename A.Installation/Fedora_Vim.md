@@ -7,17 +7,17 @@ URL: https://superuser.com/questions/194747/how-to-install-vim-with-clipboard-su
 I'm using Fedora Linux and don't have the ability to copy text from vim into the system clipboard (which I should be able to do by using the `+` or `*` register, though I'm not sure which). If I type this at the command line:
 
 ```bash
-$ vim --version | grep clip
+vim --version | grep clip
 ```
 
 Output:
+
 ```txt
 -clipboard         +jumplist          +persistent_undo   +vertsplit
 +emacs_tags        +mouse_dec         -sun_workshop      -xterm_clipboard
 ```
 
 ... the relevant line says `-xterm_clipboard`, when what I want to see is `+xterm_clipboard`.
-
 
 ## Answer
 
@@ -36,4 +36,3 @@ If you're on Linux and are using a VIm version 7.3.74 or highers, you can do
 ```
 
 which will place yanked text into the global clipboard, and allow you to paste from the global clipboard, without having to use any special registers.
-

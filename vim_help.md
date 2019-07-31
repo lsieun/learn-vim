@@ -2,7 +2,7 @@
 
 ## `Ctrl-]`
 
-```
+```vim
 :help Ctrl-]
 ```
 

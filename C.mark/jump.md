@@ -27,23 +27,22 @@ To keep me from getting to you, baby
 ### 1.2、SENTENCES AND PARAGRAPHS
 
 - `(`: Move a sentence backwards, can take a prefix argument.
-    - `5(` - Navigates you 5 sentences backwards.
+  - `5(` - Navigates you 5 sentences backwards.
 - `)` : Move a sentence forward, can take a prefix argument.
-    - `10)` - Navigates you 10 sentences forwards.
+  - `10)` - Navigates you 10 sentences forwards.
 - `{` : Move a paragraph backward, can take a prefix argument.
-    - `5{` - Navigates you 5 paragraphs backwards.
+  - `5{` - Navigates you 5 paragraphs backwards.
 - `}` : Move a paragraph forward, can take a prefix argument.
-    - `5}` - Navigates you 5 paragraphs forwards.
+  - `5}` - Navigates you 5 paragraphs forwards.
 
 ### 1.3、SEARCH AND DESTROY
 
 - `/` : Allows you to search forwards for a desired pattern within the file.
-    - `/fishsticks` - Searches for all occurences of fishsticks ahead of your current cursor.
+  - `/fishsticks` - Searches for all occurences of `fishsticks` ahead of your current cursor.
 - `?` : Allows you to search backwards for a desired pattern within the file.
-    - `?catdog` - Searches for all occurences of catdog behind your current cursor.
+  - `?catdog` - Searches for all occurences of catdog behind your current cursor.
 - `n` : Repeats the last `/` or `?` search.
 - `N` : Repeats the last `/` or `?` search in the opposite direction.
-
 
 ## 2、Window Jumps
 
@@ -54,7 +53,6 @@ To keep me from getting to you, baby
 - `H` : Jumps your cursor to the highest line of the window.
 - `M` : Jumps your cursor to the middle line of the window.
 - `L` : Jumps your cursor to the lowest line of the window.
-
 
 ## 3、System Wide Jumps
 

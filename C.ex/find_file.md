@@ -67,7 +67,6 @@ one).
 Keys that show the previous/next match, such as `<Tab>` or
 `CTRL-P/CTRL-N`, cause the highlight to move to the appropriate match.
 
-
 ## 2. Practice
 
 ```vim
